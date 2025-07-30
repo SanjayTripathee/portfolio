@@ -1,9 +1,8 @@
-import React from "react";
 import { Outlet, Route, Routes } from "react-router-dom";
-import HomePage from "../HomePage";
 import About from "../About";
 import Contact from "../Contact";
 import Header from "../Header";
+import HomePage from "../HomePage";
 import Projects from "../Projects";
 
 
