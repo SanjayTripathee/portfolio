@@ -1,55 +1,80 @@
 import React from 'react';
+import profileImg from "../Public/sanjayTripathpas.jpg"; // replace with your actual image path
 
 const HomePage = () => {
   return (
     <div style={{
-      fontFamily: 'Segoe UI, sans-serif',
-      background: '#f8f9fa',
-      color: '#212529',
+      backgroundColor: '#0f0f0f',
+      color: 'white',
       minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
       padding: '60px 20px',
+      fontFamily: 'Segoe UI, sans-serif',
       textAlign: 'center'
     }}>
-      <h1 style={{ fontSize: '2.5rem', marginBottom: '10px' }}>
-        Hello, I'm Sanjay 👋
-      </h1>
-      <p style={{ fontSize: '1.2rem', color: '#555', maxWidth: '700px', margin: 'auto' }}>
-        I craft scalable web applications with powerful backends and modern user interfaces.
-        Passionate about performance, clean code, and solving real-world problems.
-      </p>
-
+      {/* Profile Image */}
       <div style={{
-        background: '#fff',
-        marginTop: '40px',
-        padding: '30px',
-        borderRadius: '8px',
-        maxWidth: '800px',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+        width: '160px',
+        height: '160px',
+        borderRadius: '50%',
+        overflow: 'hidden',
+        border: '6px solid white',
+        marginBottom: '30px'
       }}>
-        <h2>🛠 Projects</h2>
-        <ul style={{ textAlign: 'left', lineHeight: '1.8', paddingLeft: '20px' }}>
-          <li><strong>Shopease:</strong> Full-stack E-commerce Platform</li>
-          <li><strong>FormBuilder:</strong> Drag-and-drop form builder using React</li>
-          <li><strong>Claim Processing System:</strong> Oracle PL/SQL APIs with dynamic HTML rendering</li>
-        </ul>
+        <img src={profileImg} alt="Profile" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
       </div>
 
-      <div style={{
-        background: '#fff',
-        marginTop: '20px',
-        padding: '30px',
-        borderRadius: '8px',
-        maxWidth: '800px',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+      {/* Gradient Name & Title */}
+      <h1 style={{
+        fontSize: '2.5rem',
+        fontWeight: 'bold',
+        marginBottom: '10px'
       }}>
-        <h2>📫 Contact Me</h2>
-        <p>Email: sanjaytripathi@example.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">linkedin.com/in/yourprofile</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">github.com/yourusername</a></p>
+        I’m <span style={{
+          background: 'linear-gradient(to right, #c471ed, #f64f59)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent'
+        }}>Sanjay Tripathi</span>, frontend developer based in Nepal.
+      </h1>
+
+      <p style={{
+        color: '#bbb',
+        fontSize: '1.1rem',
+        maxWidth: '700px',
+        margin: '0 auto 40px'
+      }}>
+        I am a frontend developer from Kathmandu, Nepal with experience in building full-stack apps using MERN stack, Oracle PL/SQL, and scalable APIs.
+      </p>
+
+      {/* Buttons */}
+      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <button style={{
+          padding: '12px 24px',
+          background: 'linear-gradient(to right, #c471ed, #f64f59)',
+          border: 'none',
+          color: 'white',
+          borderRadius: '30px',
+          fontSize: '1rem',
+          fontWeight: 'bold',
+          cursor: 'pointer'
+        }}>
+          Connect with me
+        </button>
+        <button style={{
+          padding: '12px 24px',
+          background: 'transparent',
+          border: '2px solid white',
+          color: 'white',
+          borderRadius: '30px',
+          fontSize: '1rem',
+          fontWeight: 'bold',
+          cursor: 'pointer'
+        }}>
+          My resume
+        </button>
       </div>
     </div>
   );
