@@ -1,8 +1,10 @@
 import React from 'react';
 import './CSS/about.css';
+import Footer from './Footer';
 
 const About = () => (
-  <section className="about-section">
+  <>
+    <section className="about-section">
     <h2 className="about-heading">
       About <span className="highlighted-text">me</span>
     </h2>
@@ -68,6 +70,9 @@ const About = () => (
       <div className="stat"><span className="number">3+</span><br />Happy Clients</div>
     </div>
   </section>
+  <Footer/>
+  </>
+
 );
 
 export default About;
