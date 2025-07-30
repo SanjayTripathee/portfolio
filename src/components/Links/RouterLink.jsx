@@ -1,9 +1,9 @@
 import { Outlet, Route, Routes } from "react-router-dom";
 import About from "../About";
 import Contact from "../Contact";
-import Header from "../Header";
 import HomePage from "../HomePage";
 import Projects from "../Projects";
+import Services from "../Services";
 
 
 const ReactRouter = () => {
@@ -17,7 +17,7 @@ const ReactRouter = () => {
           <Route path='/about' element={<About/>}></Route>  
 
           <Route path="contact" element={<Contact />}></Route> 
-            <Route path="header" element={<Header />}></Route>
+            <Route path="Services" element={<Services />}></Route>
             <Route path="projects" element={<Projects />}></Route>
           </Route>
         <Route path="*" element={<div>404 Page</div>}></Route>

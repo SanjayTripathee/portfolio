@@ -1,0 +1,103 @@
+.footer-container {
+  background-color: #000;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* This is what aligns the left and right content side-by-side */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+  max-width: 500px;
+}
+
+.footer-left h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.footer-left span {
+  background: linear-gradient(to right, #a000c8, #ff9900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-left p {
+  color: #bbb;
+  font-size: 14px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  min-width: 250px;
+}
+
+.footer-right input {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #222;
+  color: white;
+  min-width: 200px;
+  flex-grow: 1;
+}
+
+.footer-right button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to right, #a000c8, #ff9900);
+  color: white;
+  cursor: pointer;
+}
+
+.footer-right button:hover {
+  opacity: 0.9;
+}
+
+hr {
+  margin: 30px 0;
+  border-color: #333;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

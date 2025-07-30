@@ -1,17 +1,25 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '../CSS/nav.css';
 
 const MainNavLinks = () => {
   return (
-    <div>
-         <NavLink to='/' style={{marginRight:"20px"}}>Home</NavLink>
-        <NavLink  to='/about' style={{marginRight:"20px"}}>About</NavLink>
-        <NavLink  to='/contact' style={{marginRight:"20px"}}>Contact</NavLink>
-        <NavLink to='/header' style={{marginRight:"20px"}}>Header</NavLink>
-        <NavLink to='/projects' style={{marginRight:"20px"}}>Projects</NavLink>
-    </div>
-  )
-}
+    <nav className="navbar">
+      <div className="navbar-logo">Tripath<span className="dot">EE</span><span className="pink-dot">.</span></div>
+      
+      <div className="navbar-links">
+        <NavLink to="/" className="nav-link">Home</NavLink>
+        <NavLink to="/about" className="nav-link">About Me</NavLink>
+        <NavLink to="/services" className="nav-link">Services</NavLink>
+        <NavLink to="/projects" className="nav-link">Projects</NavLink>
+        <NavLink to="/contact" className="nav-link">Contact</NavLink>
+      </div>
 
-export default MainNavLinks
+      <div className="navbar-button">
+        <button className="connect-btn">Connect With Me</button>
+      </div>
+    </nav>
+  );
+};
+
+export default MainNavLinks;

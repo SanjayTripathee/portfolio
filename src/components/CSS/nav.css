@@ -1,0 +1,71 @@
+/* nav.css */
+
+.navbar {
+  background-color: #0f0f0f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-logo .dot {
+  color: white;
+}
+
+.navbar-logo .pink-dot {
+  color: #ff00cc;
+  font-size: 32px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ff00cc;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 20px;
+  height: 5px;
+  background: #ff00cc;
+  border-radius: 5px;
+}
+
+.navbar-button .connect-btn {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ff00cc, #ff6600);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.connect-btn:hover {
+  transform: scale(1.05);
+}

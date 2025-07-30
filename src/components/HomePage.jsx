@@ -1,26 +1,35 @@
 import './CSS/home.css'
+import Footer from './Footer';
 // import profileImg from "../Public/sanjayTripathpas.jpg";
 
 const HomePage = () => {
  return (
-    <div className="home-container">
+  <>
+   <div className="home-container">
       <div className="profile-image">
         <img src="/sanjayTripathee.jpg" alt="Profile" />
       </div>
 
       <h1 className="home-title">
-        I’m <span className="gradient-text">Sanjay Tripathi</span>, frontend developer based in Nepal.
+        I’m <span className="gradient-text">Sanjay Tripathee</span>, Full Stack developer.
       </h1>
 
       <p className="home-description">
-        I am a frontend developer from Kathmandu, Nepal with experience in building full-stack apps using MERN stack, Oracle PL/SQL, and scalable APIs.
+        I am a Full Stack developer from Kathmandu, Nepal with experience in building full-stack apps using MERN stack, Oracle PL/SQL, and scalable APIs.
       </p>
 
       <div className="button-group">
         <button className="btn-gradient">Connect with me</button>
-        <button className="btn-outline">My resume</button>
+        <button className="btn-outline"><a href="/Sanjay-Tripathi_resume4.pdf" target="_blank" rel="noopener noreferrer"  style={{ textDecoration: "none" }}>
+   My Resume
+</a></button>
+        
+
       </div>
     </div>
+    <Footer/>
+  </>
+   
   );
 };
 
