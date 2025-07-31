@@ -1,8 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import './CSS/home.css'
 import Footer from './Footer';
 // import profileImg from "../Public/sanjayTripathpas.jpg";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
+  const handleConnectClick = ()=>{
+    navigate("/contact")
+  }
  return (
   <>
    <div className="home-container">
@@ -19,7 +25,7 @@ const HomePage = () => {
       </p>
 
       <div className="button-group">
-        <button className="btn-gradient">Connect with me</button>
+        <button className="btn-gradient" onClick={handleConnectClick}>Connect with me</button>
         <button className="btn-outline"><a href="/Sanjay-Tripathi_resume4.pdf" target="_blank" rel="noopener noreferrer"  style={{ textDecoration: "none" }}>
    My Resume
 </a></button>
