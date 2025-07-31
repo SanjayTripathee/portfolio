@@ -1,8 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import '../CSS/nav.css';
 
 const MainNavLinks = () => {
+  const navigate = useNavigate()
+
+  const handleSubmit = ()=>{
+    navigate("/contact")
+  }
   return (
     <nav className="navbar">
       <div className="navbar-logo">Tripath<span className="dot">EE</span><span className="pink-dot">.</span></div>
@@ -16,7 +21,7 @@ const MainNavLinks = () => {
       </div>
 
       <div className="navbar-button">
-        <button className="connect-btn">Connect With Me</button>
+        <button className="connect-btn" onClick={handleSubmit}>Connect With Me</button>
       </div>
     </nav>
   );
