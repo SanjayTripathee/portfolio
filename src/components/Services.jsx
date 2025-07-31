@@ -1,5 +1,6 @@
 import React from 'react';
 import './CSS/services.css';
+import Footer from './Footer';
 
 const services = [
   { id: '01', title: 'Web design' },
@@ -9,7 +10,8 @@ const services = [
 ];
 
 const Services = () => (
-  <div className="services-container">
+  <>
+    <div className="services-container">
     <h2 className="services-title">My <span>Services</span></h2>
     <div className="services-grid">
       {services.map((service) => (
@@ -22,6 +24,9 @@ const Services = () => (
       ))}
     </div>
   </div>
+  <Footer/>
+  </>
+
 );
 
 export default Services;

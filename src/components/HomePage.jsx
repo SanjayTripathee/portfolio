@@ -23,8 +23,6 @@ const HomePage = () => {
         <button className="btn-outline"><a href="/Sanjay-Tripathi_resume4.pdf" target="_blank" rel="noopener noreferrer"  style={{ textDecoration: "none" }}>
    My Resume
 </a></button>
-        
-
       </div>
     </div>
     <Footer/>
