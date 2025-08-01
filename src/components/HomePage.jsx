@@ -26,7 +26,7 @@ const HomePage = () => {
 
       <div className="button-group">
         <button className="btn-gradient" onClick={handleConnectClick}>Connect with me</button>
-        <button className="btn-outline"><a href="/Sanjay-Tripathi_resume4.pdf" target="_blank" rel="noopener noreferrer"  style={{ textDecoration: "none" }}>
+        <button className="btn-outline"><a href="/Sanjay_resume.pdf" target="_blank" rel="noopener noreferrer"  style={{ textDecoration: "none" }}>
    My Resume
 </a></button>
       </div>
