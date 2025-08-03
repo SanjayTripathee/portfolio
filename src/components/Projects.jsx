@@ -3,14 +3,46 @@ import './CSS/project.css';
 import Footer from './Footer';
 
 const projectData = [
-  { title: 'Food Api', link: 'https://github.com/SanjayTripathee/react-foodapp' },
-  { title: 'Log In Management', link: 'https://github.com/SanjayTripathee/frontendOfLogInManagement' },
-  { title: 'Online Ecommerce', link: 'https://github.com/SanjayTripathee/onlineEcommerce' },
-  { title: 'Payment Intigration', link: 'https://github.com/SanjayTripathee/paymentIntigration_Frontend' },
-  { title: 'Shopping Cart', link: 'https://github.com/SanjayTripathee/Shopping_Cart' },
-  { title: 'Google Calander', link: 'https://github.com/SanjayTripathee/Google_Calander' },
-  { title: 'Game', link: 'https://github.com/SanjayTripathee/projectjs' },
-  { title: 'Web Design', link: 'https://github.com/SanjayTripathee/Web-design-mini-project' },
+  {
+    title: 'Food Api',
+    link: 'https://github.com/SanjayTripathee/react-foodapp',
+    image: '/foodapp.jpg',
+  },
+  {
+    title: 'Log In Management',
+    link: 'https://github.com/SanjayTripathee/frontendOfLogInManagement',
+    image: '/sanjayTripathee.jpg',
+  },
+  {
+    title: 'Online Ecommerce',
+    link: 'https://github.com/SanjayTripathee/onlineEcommerce',
+    image: '/images/ecommerce.jpg',
+  },
+  {
+    title: 'Payment Intigration',
+    link: 'https://github.com/SanjayTripathee/paymentIntigration_Frontend',
+    image: '/images/payment.jpg',
+  },
+  {
+    title: 'Shopping Cart',
+    link: 'https://github.com/SanjayTripathee/Shopping_Cart',
+    image: '/images/cart.jpg',
+  },
+  {
+    title: 'Google Calander',
+    link: 'https://github.com/SanjayTripathee/Google_Calander',
+    image: '/images/calendar.jpg',
+  },
+  {
+    title: 'Game',
+    link: 'https://github.com/SanjayTripathee/projectjs',
+    image: '/images/game.jpg',
+  },
+  {
+    title: 'Web Design',
+    link: 'https://github.com/SanjayTripathee/Web-design-mini-project',
+    image: '/images/webdesign.jpg',
+  },
 ];
 
 const Projects = () => (
@@ -21,7 +53,7 @@ const Projects = () => (
         {projectData.map((proj, index) => (
           <div key={index} className="project-card">
             <img
-              src="/sanjayTripathee.jpg"
+              src={proj.image}
               alt={proj.title}
               className="project-image"
             />
@@ -32,7 +64,7 @@ const Projects = () => (
               rel="noopener noreferrer"
               className="project-button"
             >
-              View 
+              View
             </a>
           </div>
         ))}
