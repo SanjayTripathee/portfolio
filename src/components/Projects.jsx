@@ -16,12 +16,12 @@ const projectData = [
   {
     title: 'Online Ecommerce',
     link: 'https://github.com/SanjayTripathee/onlineEcommerce',
-    image: '/images/ecommerce.jpg',
+    image: '/ecommerce.jpg',
   },
   {
     title: 'Payment Intigration',
     link: 'https://github.com/SanjayTripathee/paymentIntigration_Frontend',
-    image: '/images/payment.jpg',
+    image: '/myProject.png',
   },
   {
     title: 'Shopping Cart',
@@ -41,7 +41,7 @@ const projectData = [
   {
     title: 'Web Design',
     link: 'https://github.com/SanjayTripathee/Web-design-mini-project',
-    image: '/images/webdesign.jpg',
+    image: '/reactWebsite.png',
   },
 ];
 
