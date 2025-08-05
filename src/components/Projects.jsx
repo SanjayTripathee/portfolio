@@ -31,7 +31,7 @@ const projectData = [
   {
     title: 'Google Calander',
     link: 'https://github.com/SanjayTripathee/Google_Calander',
-    image: '/images/calendar.jpg',
+    image: '/GoogleCalander.png',
   },
   {
     title: 'Game',
