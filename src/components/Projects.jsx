@@ -9,9 +9,9 @@ const projectData = [
     image: '/foodapp.jpg',
   },
   {
-    title: 'Log In Management',
-    link: 'https://github.com/SanjayTripathee/frontendOfLogInManagement',
-    image: '/sanjayTripathee.jpg',
+    title: 'CRUD',
+    link: 'https://github.com/SanjayTripathee/User_Product_Review',
+    image: '/crud.png',
   },
   {
     title: 'Online Ecommerce',
