@@ -36,7 +36,7 @@ const projectData = [
   {
     title: 'Game',
     link: 'https://github.com/SanjayTripathee/projectjs',
-    image: '/images/game.jpg',
+    image: '/game.png',
   },
   {
     title: 'Web Design',
