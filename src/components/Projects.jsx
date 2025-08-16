@@ -9,11 +9,6 @@ const projectData = [
     image: '/foodapp.jpg',
   },
   {
-    title: 'CRUD',
-    link: 'https://github.com/SanjayTripathee/User_Product_Review',
-    image: '/crud.png',
-  },
-  {
     title: 'Online Ecommerce',
     link: 'https://github.com/SanjayTripathee/onlineEcommerce',
     image: '/ecommerce.jpg',
@@ -26,7 +21,7 @@ const projectData = [
   {
     title: 'Shopping Cart',
     link: 'https://github.com/SanjayTripathee/Shopping_Cart',
-    image: '/images/cart.jpg',
+    image: '/shoppingCart.png',
   },
   {
     title: 'Google Calander',
@@ -43,6 +38,11 @@ const projectData = [
     link: 'https://github.com/SanjayTripathee/Web-design-mini-project',
     image: '/reactWebsite.png',
   },
+  {
+    title: 'CRUD',
+    link: 'https://github.com/SanjayTripathee/User_Product_Review',
+    image: '/crud.png',
+  }
 ];
 
 const Projects = () => (
