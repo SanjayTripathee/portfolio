@@ -13,8 +13,8 @@ const About = () => (
       {/* Profile Image */}
       <div className="about-image-container">
         <img
-          src="../Public/sanjayTripathee.jpg" // Make sure the path is correct
-          alt="Profile"
+          src="/sanjayTripathee.jpg" // Make sure the path is correct
+          alt="about me"
           className="about-profile-image"
         />
       </div>
