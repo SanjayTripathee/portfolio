@@ -3,7 +3,7 @@ import './CSS/contact.css';
 import Footer from './Footer';
 import axios from 'axios';
 import { useState } from 'react';
-import { bUrl } from '../../constant';
+import { bUrl } from '../constant';
 
 const Contact = () => {
   // form state
