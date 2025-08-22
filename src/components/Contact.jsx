@@ -23,7 +23,7 @@ const Contact = () => {
 
   try {
     const result = await axios({
-      url: `${bUrl}/portfolio`, // your backend endpoint
+      url: `${bUrl}/api/portfolio`, // your backend endpoint
       method: "post",
       data: data, // form data to save in DB
     });
